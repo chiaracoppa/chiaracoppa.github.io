@@ -81,3 +81,41 @@ ul.tirets li::before {
     left: 0;
     color: #8e63bb;          /* lilas si tu veux */
 }
+
+.indent1 {
+    display: block;       /* force la ligne à passer à la ligne suivante */
+    margin-left: 170px;    /* décale vers la droite */
+}
+
+.indent2 {
+    display: block;       /* force la ligne à passer à la ligne suivante */
+    margin-left: 138px;    /* décale vers la droite */
+}
+
+
+.photo-cv {
+    width: 180px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #e8dbf8; /* joli contour lilas */
+}
+
+
+
+ul.cercles {
+    list-style-type: none;   /* on supprime les puces */
+    padding-left: 0;
+}
+
+ul.cercles li {
+    position: relative;
+    padding-left: 1em;      /* espace pour le tiret */
+}
+
+ul.cercles li::before {
+    content: "‣";            /* le tiret à gauche */
+    position: absolute;
+    left: 0;
+    color: #8e63bb;          /* lilas si tu veux */
+}
