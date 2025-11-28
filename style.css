@@ -65,3 +65,19 @@ footer {
     color: #7b4ba8;
 }
 
+ul.tirets {
+    list-style-type: none;   /* on supprime les puces */
+    padding-left: 0;
+}
+
+ul.tirets li {
+    position: relative;
+    padding-left: 1em;      /* espace pour le tiret */
+}
+
+ul.tirets li::before {
+    content: "–";            /* le tiret à gauche */
+    position: absolute;
+    left: 0;
+    color: #8e63bb;          /* lilas si tu veux */
+}
