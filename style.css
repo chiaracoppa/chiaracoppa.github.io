@@ -1,1 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #faf7ff;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #7b4ba8; /* lilas foncé */
+}
+
+h2 {
+    color: #8e63bb;
+    border-bottom: 2px solid #d9c7ef;
+    padding-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #b189d6;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #7b4ba8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.portfolio .project {
+    margin-bottom: 40px;
+}
+
+.project img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 3px solid #e8dbf8;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #7b4ba8;
+}
 
