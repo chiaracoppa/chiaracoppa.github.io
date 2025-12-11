@@ -22,6 +22,19 @@ h2 {
     padding-bottom: 5px;
 }
 
+a {
+    color: #9370DB; /* lilas */
+    
+}
+
+p {
+    line-height: 1.5; /* 1.5 fois la hauteur de la ligne par défaut */
+}
+
+li {
+    line-height: 1.5; /* 1.5 fois la hauteur de la ligne par défaut */
+}
+
 .subtitle {
     font-size: 18px;
     color: #b189d6;
@@ -42,6 +55,12 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+#toc a {
+    color: #333; /* ou #800080 pour un lilas plus précis */
+    text-decoration: none; /* optionnel, pour enlever le souligné */
+}
+
 
 section {
     margin-bottom: 40px;
@@ -74,6 +93,15 @@ section {
     border: 3px solid #e8dbf8;
 }
 
+.project3 img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 3px solid #e8dbf8;
+}
+
+
 
 footer {
     text-align: center;
@@ -98,15 +126,6 @@ ul.tirets li::before {
     color: #8e63bb;          /* lilas si tu veux */
 }
 
-.indent1 {
-    display: block;       /* force la ligne à passer à la ligne suivante */
-    margin-left: 170px;    /* décale vers la droite */
-}
-
-.indent2 {
-    display: block;       /* force la ligne à passer à la ligne suivante */
-    margin-left: 138px;    /* décale vers la droite */
-}
 
 
 .photo-cv {
