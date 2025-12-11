@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Découvrir le Tessin à pied</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="geodata/point_interet.js"></script>
+    <script src="geodata/chemins.js"></script>
+    <script src="Info_rando.js"></script>
+  </head>
+
+  <body>
+    <h1>Découvrir la richesse du canton Tessin à pied</h1>
+    <h2>15 propositions d'itinéraires pour différents niveaux à faire au printemps</h2>
+    <div id = "legend">
+      <table> <!--Création d'un tableau pour représenter la légende avec l'icône des marqueurs et une description-->
+        <tr> 
+            <td><img src="icones/bus_icone.png" alt="Icône bus"></td>
+            <td>Arrêt du bus</td>
+            <td><img src="icones/musee_icone.png" alt="Icône musée"></td>
+            <td>Musée</td>
+        </tr>
+
+        <tr>
+          <td><img src="icones/iconeparking.png" alt="Icône parking"></td>
+          <td>Parking</td>
+          <td><img src="icones/pont_icone.png" alt="Icône pont"></td>
+          <td>Pont</td>
+        </tr>
+
+        <tr>
+          <td><img src="icones/refuge_icone.png" alt="Icône réfuge"></td>
+          <td>Refuge/Cabane</td>
+          <td><img src="icones/restaurant_icone.png" alt="Icône restaurant"></td>
+          <td>Restaurant</td>
+        </tr>
+
+        <tr>
+          <td><img src="icones/sommet_icone.png" alt="Icône sommet"></td>
+          <td>Sommet de la montagne</td>
+          <td><img src="icones/telepherique_icone.png" alt="Icône téléphérique"></td>
+          <td>Téléphérique</td>
+        </tr>
+
+        <tr>
+          <td><img src="icones/train_icone.png" alt="Icône train"></td>
+          <td>Gare</td>
+          <td><img src="icones/chemins.png" alt="chemins"></td>
+          <td>Tracé des itinéraires</td>
+        </tr>
+        
+    </table>
+    
+
+    </div>
+
+   
+
+    <div id = "map">
+
+    </div>
+
+    <div class = "recherche">
+    
+      <select id="randonnee"> <!--Réalisation avec du code javascript de la liste déroulante-->
+          <option value="">-- Sélectionnez votre randonnée --</option> <!-- Option de défaut -->
+          <!--Script JavaScript pour la liste déroulante-->
+          <script>
+              // Récupération de l'élément de sélection par son ID
+              var selectElement = document.getElementById("randonnee");
+              randonnees.features.forEach(function (feature) {
+                  // Création d'un option pour chaque élément
+                  var option = document.createElement("option");
+                  option.value = feature.properties.id;
+                  option.text = feature.properties.nom;
+  
+                  selectElement.appendChild(option);  // Ajout de l'option à la liste déroulante
+              });
+  
+              // Tri alphabétique des options
+            var options = Array.from(selectElement.options);
+
+              options.sort(function(a, b) {
+                  var textA = a.text.toUpperCase();
+                  var textB = b.text.toUpperCase();
+                  return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+              });
+
+                selectElement.innerHTML = "";
+                // Ajout des options triées à la liste déroulante
+                options.forEach(function(option) {
+                    selectElement.appendChild(option);
+                });
+
+              
+              selectElement.addEventListener('change', function (e) {
+                  var id_randonnee = selectElement.value;
+                  if (id_randonnee == "") return;
+                  var randonnee = randonnees.features.find(function (feature) {
+                      return feature.properties.id === id_randonnee;
+                  });
+
+                // Appel de la fonction pour zoomer sur la randonnée sélectionnée
+                  zoomToRandonnee(randonnee);
+              });
+          </script>
+      </select>
+    </div>
+
+   <div class = "inforandonnee"> 
+      <div id = "fiche"> </div>
+      <div id = "photos"></div>
+   </div>
+
+  <div class ="infobox">
+    <p>Appuyez sur un marqueur de la carte pour <br> obtenir plus d’informations</p>
+  </div>
+
+   <div class = "auteure">
+      <p>@Chiara Coppa, 2023</p> 
+   </div>
+
+    <script src="index.js"></script>
+  </body>
+
+</html>
