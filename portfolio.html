@@ -17,17 +17,31 @@
     <a href="cv.html">Mon CV</a>
 </nav>
 
-<h3>
-    Présentation de quelques projets réalisés durant mes études ces dernières années, dans les domaines de l’urbanisme, des SIG et de l’analyse du territoire.
-</h3>
+<h2>
+    Présentation de quelques projets réalisés durant mes études, dans les domaines de l’urbanisme, des SIG et de l’analyse du territoire
+</h2>
+
+<div id="toc">
+    
+    <ul class="tirets">
+      <li><a href="#carto">Mes premières cartes en symboles proportionnels colorés</a></li>
+      <li><a href="#visage">Visualisation et analyse de données géographiques</a></li>
+      <li><a href="#adg">Analyses spatiales et quantitatives en géographie</a></li>
+      <li><a href="#TB">Infographie Travail de Bachelor</a></li>
+      <li><a href="#Diag">Diagnostic territorial</a></li>
+      <li><a href="#AtelierIII">Atelier de projet urbain et territorial</a></li>
+    </ul>
+  </div>
+
 <section class="portfolio">
 
     <div class="project">
-        <h2>Mes premières cartes en symboles proportionnels colorés</h2>
-        <p>Cartes réalisée dans la cadre du cours <i>Cartographie et SIG</i> en première année de Bachelor. <br>
-            La première carte a été réalisée manuellement à l'aide d'un logiciel de graphisme (Affinity Designer) 
-            tandis que la deuxième a été réalisée avec le logiciel QGIS et ensuite habillé dans le logiciel de graphisme. 
-            Le choix des carrées au lieu des cercles pour les symboles proportionnels est du à la sous-estimation de la taille des cercles par la perception humaine.
+        <h2 id="carto">Mes premières cartes en symboles proportionnels colorés</h2>
+        <p>Cartes réalisées dans le cadre du cours <i>Cartographie et SIG</i> en première année de Bachelor.<br>
+            La première carte a été réalisée manuellement à l’aide d’un logiciel de graphisme (Affinity Designer), 
+            tandis que la deuxième a été produite avec le logiciel QGIS puis finalisée dans le logiciel de graphisme. 
+            Le choix des carrés plutôt que des cercles pour les symboles proportionnels est lié à la sous-estimation 
+            perceptive de la taille des cercles par l’œil humain.
         </p>
         <img src="portfolio/tp1_carto.png" alt="TP 1 Carto">
         <div class="project1">
@@ -36,11 +50,12 @@
     </div>
 
     <div class="project2">
-        <h2>Visualisation et analyse de données géographiques</h2>
-        <p>Projets réalisés dans le cadre du cours <i>Visualisation et analyse des données géographiques</i> <br>
-            Les images suivantes montrent des exemples de visualisation de données géographiques sous des formes diverses 
-            comme une carte de situation (première image), une carte choroplèthe avec graphique de corrélation réalisé dans R (deuxième image)
-            et un graphique en petit multiples réalisé aussi dans R (troisième image) accompagné d'une description de l'analyse.
+        <h2 id="visage">Visualisation et analyse de données géographiques</h2>
+        <p>Projets réalisés dans le cadre du cours <i>Visualisation et analyse des données géographiques</i>.<br> 
+            Les images suivantes présentent différents exemples de visualisation de données géographiques : 
+            une carte de situation (première image), une carte choroplèthe accompagnée d’un graphique de 
+            corrélation réalisé dans R (deuxième image), ainsi qu’un graphique en petits multiples, également 
+            réalisé dans R (troisième image), accompagné d’une description de l’analyse.
         </p>
         <img src="portfolio/tp1_visage.png" alt="TP 1 Visage">
         <img src="portfolio/tp2_visage.png" alt="TP 2 Visage">
@@ -48,7 +63,65 @@
         <a href="portfolio/Chiara_Coppa_commandes.html">Voir le rapport d'analyse</a>
     </div>
 
-    <!-- Tu peux dupliquer autant que tu veux -->
+
+    <div class="project">
+        <h2 id="adg">Analyses spatiales et quantitatives en géographie</h2>
+        <p>Projets réalisés dans le cadre du cours <i>Analyses spatiales et quantitatives en géographie</i>.<br> 
+            Les deux projets suivants présentent des exemples d'analyse quantitative de données géographiques à l'aide du logiciel R.<br>
+            Le premier projet est une étude territoriale sur la Surface agricole utile dans deux communes de Suisse alémanique.<br>
+            <a href="portfolio/ADG/Chiara_Coppa_etude_territorial_tp1_adg.html">Voir le rapport explicatif</a> ainsi que le <a href="portfolio/ADG/Chiara_Coppa_tp1_adg.html">rapport technique.</a><br> 
+                <div class = "project1">
+                    <img src="portfolio/ADG/tp1_adg.jpg" alt="TP 1 ADG"><br>
+                </div> <br>
+                Le deuxième projet était centré sur la réalisation d’une Analyse en Composantes Principales (ACP), 
+                suivie d’une Classification Ascendante Hiérarchique (CAH) et d’une Régression Logistique Multinomiale (RLM). <br>
+            <a href="portfolio/ADG/ACP_explication_tp2_adg.html">Voir le rapport de l'ACP</a> 
+            le <a href="portfolio/ADG/Clustering_explication_tp2_adg.html">rapport de la CAH</a> et le <a href="portfolio/ADG/Regression_explication_tp2_adg.html">rapport de la RLM</a><br> 
+            <img src="portfolio/ADG/ACP_carte_dimension_1.jpg" alt="TP 2 ADG ACP">
+            <img src="portfolio/ADG/carte_clustering.jpg" alt="TP 2 ADG Cluster">
+            <img src="portfolio/ADG/Coppa_Chiara_carte_erreurs_regression.jpg" alt="TP 2 ADG regression">
+        <p>
+    </div>
+
+
+    <div class="project2">
+        <h2 id="TB">Infographie Travail de Bachelor</h2>
+        <p>L'image suivante représente l'infographie au format A0 réalisée pour résumer mon travail de Bachelor.</p>
+        <img src="portfolio/poster_tb.jpg" alt="Poster TB">
+    </div>
+
+    <div class="project2">
+        <h2 id="Diag">Diagnostic territorial</h2>
+        <p>Dans le cadre du cours <i>Diagnostic territorial</i> 
+            j'ai réalisé un rapport d'analyse statistique afin de déterminer s'il existe un lien 
+            entre les prescriptions d’opioïdes en 2017 au Kentucky et le contexte géographique 
+            de ces prescriptions, à l’échelle des comtés. 
+            L'analyse s'est basée sur une ACP et une étude des corrélations. 
+            Les calculs statistiques ont été réalisés en groupe, mais le rapport final a été rédigé individuellement. </p><br>
+        <a href="portfolio/diagnostic_territorial/Chiara_Coppa_CC1.pdf">Rapport d'analyse</a> <br>
+        <img src="portfolio/diagnostic_territorial/carte_surfaces_urbaines.png" alt="Surfaces urbaines Diag">
+    </div>
+
+    <div class="project2">
+        <h2 id="carte_interactive">Carte interactive</h2>
+        <p>Dans le cadre du cours <i>Concepts de base en géovisualisation</i> 
+            j'ai réalisé une carte intéractive sur les randonnées en montagne du canton Tessin. <br>
+            <i>Cliquez sur l'image pour accéder à la carte </i>
+            <a href="portfolio/carte_interactive/index.html"><img src="portfolio/carte_interactive_.png" alt="Carte interactive"></a>
+        </p>
+    </div>
+
+    <div class="project3">
+        <h2 id="AtelierIII">Atelier de projet urbain et territorial : vision sur la commune de Pully</h2>
+        <p>Dans le cadre d’un atelier de projet urbain et territorial en groupe, 
+            nous avons réalisé un projet pour les rives du lac de la commune de Pully. 
+            Le résultat a été synthétisé dans trois posters au format A0<br>
+        <a href="portfolio/atelier_3_poster.jpg"><img src="portfolio/atelier_3_poster.jpg" alt="Posters Atelier III"></a>
+        </p>
+
+    </div>
+    
+    
 </section>
 
 <footer>
@@ -57,3 +130,4 @@
 
 </body>
 </html>
+
