@@ -1,0 +1,146 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin: 20px;
+  }
+
+h1 {
+    margin: 0;
+    font-weight: bold;
+    color:#194c22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #194c22;
+    font-style: italic;
+}
+
+#legend {
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    height: 300px;
+    width: 300px;
+    background-color: #cde8cd;
+    font-size: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 35px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 13px; 
+    width: 20px;/* pour la largeur des cellules du tableau */
+    height: 20px; /* pour l'hauteur des ccellules du tableau */
+}
+
+th img, td img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+}
+
+#map {
+    position: absolute;
+    top: 85px;
+    left: 335px;
+    height: calc(100vh - 105px);
+    width: 700px;
+}
+
+.recherche {
+    position: absolute;
+    top: 85px;
+    left: 1060px;
+    z-index: 1000;
+}
+
+#recherche {
+    position: absolute;
+    top: 30px;
+}
+
+select {
+    width: calc(100vw - 1100px) ;
+}
+
+.inforandonnee {
+    position: absolute;
+}
+
+#fiche {
+    position: absolute;
+    top: 50px;
+    left: 1040px;
+    width: calc(100vw - 1100px);
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+#photos {  
+    position: absolute;
+    top: 325px;
+    height: calc(100vh - 420px);
+    width: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#photos img {
+    display: block;
+    width: 280px;
+    margin-bottom: 10px;
+  }
+
+h4 {
+    display: inline;
+    color: #246f30 ;
+    margin-bottom: 0px;
+  }
+
+p {
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+
+.justified-text {
+    text-align: justify;
+  }
+
+body {
+    background-color: #f2fdf2 ;
+}
+
+.titrerando {
+    color: #194c22 ;
+    font-style: italic;
+}
+
+.auteure {
+    position: absolute;
+    top: calc(100vh - 50px);
+    left: calc(100vw - 170px);
+}
+
+.infobox {
+    position: absolute ;
+    top: 90px;
+    left: 30px;
+    font-style: italic;
+}
