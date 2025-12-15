@@ -58,7 +58,7 @@ nav a:hover {
 
 #toc a {
     color: #333; /* ou #800080 pour un lilas plus précis */
-    text-decoration: none; /* optionnel, pour enlever le souligné */
+    /*text-decoration: none; /* optionnel, pour enlever le souligné */
 }
 
 
